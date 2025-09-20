@@ -37,7 +37,6 @@ Observe que o prompt do terminal altera de [... /] para [...~].
 
 Após o comando ls nada aparece pois a pasta está vazia.
 
-
 4. Criação de uma pasta chamada atividades:
 
 ![Print da criação de uma pasta chamada atividades:](imagens/imagem5.png)
@@ -52,13 +51,47 @@ Após o comando ls nada aparece pois a pasta está vazia.
 
 Observe que o prompt do terminal altera de [... atividades] para [...~].
 
-###  📌 2.2.3. Navegação básica
+###  📌 2.2.3. Manipulação de arquivos
 
 1. Acessando o diretório home do usuário e verificando se o acesso foi feito:
 
 ![Print do processo para acessar o diretório home do usuário e verificação](imagens/imagem8.png)
 
 O comando pwd confirmou que estou na pasta inicial do usuário root, administrador principal do sistema.
+
+2. Criação de um arquivo arquivo1.txt no diretório home:
+
+![Print da criação de um arquivo arquivo1.txt no diretório home](imagens/imagem9.png)
+
+A falta de retorno visual no terminal indica que a operação foi concluída com sucesso. 
+
+3. Renomação do arquivo para documento.txt:
+
+![Print da renomeação do arquivo para documento.txt](imagens/imagem10.png)
+
+A falta de retorno visual no terminal indica que a operação foi concluída com sucesso. 
+
+4. Acessando a pasta atividades (criada na Atividade 1):
+
+![Print do acesso a pasta "atividades"](imagens/imagem11.png)
+
+A falta de retorno visual no terminal indica que a operação foi concluída com sucesso. 
+
+5. Criação de um subdiretório chamado backup dentro da pasta atividades:
+
+![Print da criação da subpasta backup dentro da pasta atividades](imagens/imagem12.png)
+
+Como mostra a linha da criação da subpasta, o acesso a pasta atividades foi devidamente realizado pois o prompt do terminal finaliza com  [... atividades]
+
+
+
+
+
+
+
+
+
+
 
 
 
