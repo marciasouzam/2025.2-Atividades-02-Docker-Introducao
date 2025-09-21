@@ -23,7 +23,9 @@ Passo 1. Verificação de em qual diretório estou:
 
 ![Print da verificação de diretório:](imagens/imagem2.png)
 
-O "/" me aponta que estou no diretório raiz
+O "/" me aponta que estou no diretório raiz.
+
+---
 
 Passo 2. Acesso ao diretório home do usuário:
 
@@ -31,25 +33,35 @@ Passo 2. Acesso ao diretório home do usuário:
 
 Observe que o prompt do terminal altera de [... /] para [...~].
 
+---
+
 Passo  3. Listagem dos arquivos e pastas do diretório atual:\
 
 ![Print da listagem dos arquivos e pastas do diretório atual:](imagens/imagem4.png)
 
 Após o comando ls nada aparece pois a pasta está vazia.
 
+---
+
 Passo  4. Criação de uma pasta chamada atividades:
 
 ![Print da criação de uma pasta chamada atividades:](imagens/imagem5.png)
 
+---
+
 Passo  5. Entrando na pasta atividades criada anteriormente:
 
 ![Print de comando para entrar na pasta atividades](imagens/imagem6.png)
+
+---
 
 Passo 6. Voltando para o diretório anterior:
 
 ![Print do comando para volta para o diretório anterior](imagens/imagem7.png)
 
 Observe que o prompt do terminal altera de [... atividades] para [...~].
+
+---
 
 ###  📌 2.2.3. Manipulação de arquivos
 
@@ -59,11 +71,15 @@ Passo 1. Acessando o diretório home do usuário e verificando se o acesso foi f
 
 O comando pwd confirmou que estou na pasta inicial do usuário root, administrador principal do sistema.
 
+---
+
 Passo 2. Criação de um arquivo arquivo1.txt no diretório home:
 
 ![Print da criação de um arquivo arquivo1.txt no diretório home](imagens/imagem9.png)
 
 A falta de retorno visual no terminal indica que a operação foi concluída com sucesso. 
+
+---
 
 Passo 3. Renomação do arquivo para documento.txt:
 
@@ -71,17 +87,23 @@ Passo 3. Renomação do arquivo para documento.txt:
 
 A falta de retorno visual no terminal indica que a operação foi concluída com sucesso. 
 
+---
+
 Passo 4. Acessando a pasta atividades (criada na Atividade 1):
 
 ![Print do acesso a pasta "atividades"](imagens/imagem11.png)
 
 A falta de retorno visual no terminal indica que a operação foi concluída com sucesso. 
 
+---
+
 Passo 5. Criação de um subdiretório chamado backup dentro da pasta atividades:
 
 ![Print da criação da subpasta backup dentro da pasta atividades](imagens/imagem12.png)
 
 Como mostra a linha da criação da subpasta, o acesso a pasta atividades foi devidamente realizado pois o prompt do terminal finaliza com  [... atividades].
+
+---
 
 Passo 6. Copiando documento.txt (da home) para a subpasta backup:
 
@@ -93,6 +115,8 @@ Já estando na pasta atividades, conforme mostra  [... atividades], utiliza-se o
 
 ![Print do comando ls, que mostra o que têm nas pastas](imagens/imagem14.png)
 
+---
+
 Passo 7. Voltando ao diretório home usando cd ~
 
 ![Print do comando para voltar ao diretório home](imagens/imagem14.png)
@@ -103,11 +127,15 @@ Passo 7. Voltando ao diretório home usando cd ~
 
 /root comunica que estamos no local esperado.
 
+---
+
 Passo 8. Exclusão do documento.txt original da home:
 
 ![Print da exclusão do documento.txt original da home](imagens/imagem16.png)
 
 O comando rm solicita uma confirmação do usuário antes de remover um arquivo.
+
+---
 
 Passo 9. Verficando se o arquivo ainda existe em backup
 
@@ -115,43 +143,63 @@ Passo 9. Verficando se o arquivo ainda existe em backup
 
 Para isso, foi preciso utilizar "ls" associado a todo o caminho de nosso interesse: ls atividades/backup/
 
+---
+
 ### 📌 2.2.4. Gerenciamento de pacotes
 
 Passo 1. Atualização da lista de pacotes:
 
 ![Print do comando de atualização da lista de pacotes](imagens/imagem18.png)
 
+---
+
 Passo 2. Instalação do editor de texto nano:
 
 ![Print do comando de instalação do editor de texto nano](imagens/imagem19.png)
+
+---
 
 Passo 3. Verificando se o nano foi instalado:
 
 ![Print do comando de verificação se o nano foi instalado](imagens/imagem20.png)
 
+---
+
 Passo 4. Remoção do nano:
 
 ![Print do comando de remoção do nano](imagens/imagem21.png)
+
+---
 
 ### 📌 2.2.5. Permissões de arquivos
 
 Objetivo: Modificar permissões de arquivos.
 
+---
+
 Passo 1. Criação de um arquivo script.sh:
 
 ![Print do comando de criação do arquivo script.sh](imagens/imagem22.png)
+
+---
 
 Passo 2. Dando permissão de execução ao dono:
 
 ![Print do comando de permissão de execução ao dono](imagens/imagem23.png)
 
+---
+
 Passo 3. Verificação das permissões:
 
 ![Print do comando de verificação das permissões](imagens/imagem24.png)
 
+---
+
 ### 📌 2.2.6. Processos em execução
 
 Objetivo: Monitorar e encerrar processos.
+
+---
 
 Passo 1. Listando processos em execução:
 
@@ -173,17 +221,23 @@ PID: o número de identificação do processo.
 %MEM: o uso de memória.
 COMMAND: o comando que iniciou o processo. 
 
+---
+
 Passo 2. Execução de um processo em segundo plano (ex: sleep 60):
 
 ![Print do comando de execução de um processo em segundo plano](imagens/imagem28.png)
 
 O "sleep 60" inicia um processo que fica "dormindo" por 60 segundos, ou seja, não utiliza o processador ativando, ficando em estado de espera. o __&__ é o elemento responsável por iniciar este processo __em segundo plano__, o que torna possível enviarmos um novo comando logo após (passo 3). O retorno dado pelo terminal, __1 [74]__ devolve o número da tarefa (1) e o PID do processo sleep (74).
 
+---
+
 Passo 3. Encontrando o PID do processo sleep:
 
 ![Print do comando para encontrar o PID do processo sleep](imagens/imagem29.png)
 
 "ps aux | grep sleep" encontra o PID após uma busca por todos os processos que estão rodando, filtrando o que queremos pela palavra "sleep". Ao final, mostra os detalhes do processo. 
+
+---
 
 Passo 4. Encerrando o processo:
 
@@ -205,15 +259,21 @@ Foi feita uma nova tentativa, novamente com erro de sintaxe:
 
 Após algumas tentativas, entre elas a criação de novos processos, compreendi o que estava ocorrendo e acertei a sintaxe do comando kill (kill PID, apenas).
 
+---
+
 ### 📌 2.2.7. Encerrando o contêiner
 
 Passo 1. Saída do container:
 
 ![Print do comando de saída do container](imagens/imagem36.png)
 
+---
+
 Passo 2. Remoção do container após o uso: 
 
 ![Print do comando de remoção do container](imagens/imagem37.png)
+
+---
 
 ### Conclusão
 
